@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f384fbd4-03ef-4389-8654-9da4413d12ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.jpb/jpb-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/CobrancaViagem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Onibus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Passe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/repository/CobrancaViagemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/repository/OnibusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/repository/PasseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/repository/PessoaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/CobrancaViagemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/OnibusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/PasseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/PessoaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/dto/CobrancaViagemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/dto/OnibusDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/dto/PasseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/dto/PessoaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/mapper/CobrancaViagemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/mapper/EntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/mapper/OnibusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/mapper/PasseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/mapper/PessoaMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/CobrancaViagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/CobrancaViagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Onibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Onibus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Passe.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Passe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/domain/Pessoa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JpaLiquibaseChangeLog" />
-        <option value="Class" />
         <option value="JpaEntity" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,15 +76,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/dto" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/dto" />
+      <recent name="$PROJECT_DIR$/service/src/main/java/br/com/gavs/skyfly/service/service/mapper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.gavs.skyfly.service.service.mapper" />
+      <recent name="br.com.gavs.skyfly.service.service.dto" />
     </key>
   </component>
   <component name="RunAnythingCache">

@@ -12,25 +12,25 @@ import java.io.Serializable;
 @Entity
 public class Passe implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_passe")
-    @SequenceGenerator(name = "seq_passe", sequenceName = "seq_passe", allocationSize = 1)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_PASSE")
+    @SequenceGenerator(name = "SEQ_PASSE", sequenceName = "SEQ_PASSE", allocationSize = 1)
+    @Column(name = "ID", nullable = false)
     private Long id;
 
-    @Column(name = "codigo_rfid", nullable = false, unique = true)
+    @Column(name = "CODIGO_RFID", nullable = false, unique = true)
     private Long codigoRFID;
 
-    @Column(name = "saldo", nullable = false)
+    @Column(name = "SALDO", nullable = false)
     private Double saldo;
 
-    @Column(name = "ativo", nullable = false)
+    @Column(name = "ATIVO", nullable = false)
     private Boolean ativo;
 
-    @Column(name = "categoria_estudantil", nullable = false)
+    @Column(name = "CATEGORIA_ESTUDANTIL", nullable = false)
     private Boolean categoriaEstudantil;
 
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "id_pessoa")
+    @JoinColumn(name = "ID_PESSOA")
     private Pessoa idPessoa;
 
 }

@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.sql.Blob;
 import java.sql.Date;
 import java.io.Serializable;
 
@@ -13,27 +14,31 @@ import java.io.Serializable;
 @Table(name = "pessoa")
 public class Pessoa implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_pessoa")
-    @SequenceGenerator(name = "seq_pessoa", sequenceName = "seq_pessoa", allocationSize = 1)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_PESSOA")
+    @SequenceGenerator(name = "SEQ_PESSOA", sequenceName = "SEQ_PESSOA", allocationSize = 1)
+    @Column(name = "ID", nullable = false)
     private Long id;
 
-    @Column(name = "name", nullable = false, length = 100)
+    @Column(name = "NAME", nullable = false, length = 100)
     private String name;
 
-    @Column(name = "data_nascimento", nullable = false)
+    @Column(name = "DATA_NASCIMENTO", nullable = false)
     private Date dataNascimento;
 
-    @Column(name = "cidade", length = 50, nullable = false)
+    @Column(name = "CIDADE", length = 50, nullable = false)
     private String cidade;
 
-    @Column(name = "estado", length = 2, nullable = false)
+    @Column(name = "ESTADO", length = 2, nullable = false)
     private String estado;
 
-    @Column(name = "telefone", length = 20)
+    @Column(name = "TELEFONE", length = 20)
     private String telefone;
 
-    @Column(name = "email", length = 200, nullable = false)
+    @Column(name = "EMAIL", length = 200, nullable = false)
     private String email;
+
+    @Lob
+    @Column(name = "FOTO")
+    private byte[] foto;
 
 }
