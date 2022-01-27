@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/file-manager/file-manager.iml" filepath="$PROJECT_DIR$/file-manager/file-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/skyfly.iml" filepath="$PROJECT_DIR$/.idea/skyfly.iml" />
     </modules>
   </component>
 </project>
